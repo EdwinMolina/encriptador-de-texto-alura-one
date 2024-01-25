@@ -5,7 +5,7 @@ btnDesencriptar.addEventListener('click', desencriptarTexto)
 // Función para desencriptar el texto
 function desencriptarTexto(e) {
     e.preventDefault();
-    let inputTexto = document.getElementById("textoEntrada").value.toLowerCase();
+    let inputTexto = document.getElementById("textoEntrada").value;
     
     if (!validarEntrada(inputTexto)) {
         alert("Por favor, ingresa solo letras minúsculas sin acentos.");
@@ -29,7 +29,7 @@ btnEncriptar.addEventListener('click', encriptarTexto);
 // Función para encriptar el texto
 function encriptarTexto(e) {
     e.preventDefault();
-    let inputTexto = document.getElementById("textoEntrada").value.toLowerCase();
+    let inputTexto = document.getElementById("textoEntrada").value;
     
     if (!validarEntrada(inputTexto)) {
         alert("Por favor, ingresa solo letras minúsculas sin acentos.");
